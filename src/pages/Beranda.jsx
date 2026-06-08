@@ -46,7 +46,7 @@ function Beranda() {
           }}
         >
           <div className="text-center p-4">
-            <h2 className="text-white fw-bold mt-2">🚀 INDOLAUNCER</h2>
+            <h2 className="text-white fw-bold mt-2">⚽ACADEMY FUTSAL⚽</h2>
             <p style={{ color: "#aad4ff", fontSize: "1.1rem" }}>
               Jelajahi Lebih Jauh Bersama Kami
             </p>
