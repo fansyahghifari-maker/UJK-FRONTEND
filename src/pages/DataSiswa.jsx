@@ -58,7 +58,7 @@ function DataSiswa() {
                             <th scope="col">Tgl Lahir</th>
                             <th scope="col">Alamat Siswa</th>
                             <th scope="col">Jurusan Siswa</th>
-                            <th scope="col">Aksi</th> {/* Menambahkan header untuk tombol */}
+                            <th scope="col">Aksi</th> 
                         </tr>
                     </thead>
                     <tbody>
@@ -76,12 +76,12 @@ function DataSiswa() {
                                 <tr key={item.kode_siswa}>
                                     <td>{item.kode_siswa}</td>
                                     <td>{item.nama_siswa}</td>
-                                    <td>{item.tanggal_lahir}</td> {/* FIX: Sesuai nama field MySQL */}
+                                    <td className="text-nowrap">{item.tanggal_lahir ? item.tanggal_lahir.split('T')[0]:""}</td> 
                                     <td>{item.alamat_siswa}</td>  {/* FIX: Posisi ditukar agar pas dengan header */}
                                     <td>{item.jurusan_siswa}</td>
                                     <td>
                                         {/* FIX: Menggunakan item.kode_siswa */}
-                                        <button className="btn btn-warning btn-sm me-2" onClick={() => handleEdit(item.kode_siswa)}>
+                                        <button className="btn btn-warning btn-sm me-2 mb-2" onClick={() => handleEdit(item.kode_siswa)}>
                                             <i className="bi bi-pencil me-1"></i>Edit
                                         </button>
                                         <button className="btn btn-danger btn-sm" onClick={() => handleDelete(item.kode_siswa)}>

@@ -50,7 +50,7 @@ function FormTambahSiswa() {
                     </div>
                     <div>
                         <label>Alamat</label>
-                        <textarea className="form-control" name="alamat_siswa" value={form.alamat_siswa} placeholder="jln. agung sedayu" onChange={handleChange} id="floatingTextarea2" style={{ height: "100px" }}></textarea>
+                        <textarea className="form-control" name="alamat_siswa" value={form.alamat_siswa} placeholder="jln. agung sedayu" onChange={handleChange} id="floatingTextarea2" style={{ height: "100px" }} required></textarea>
                     </div>
                     <div className="d-flex gap-3 d-md-block ms-1">
                         <Link type="submit" className="btn btn-secondary btn-lg me-3"  value="button" to="/">Back in</Link>
@@ -59,7 +59,7 @@ function FormTambahSiswa() {
 
                                 <div type="button" disabled>
                                     <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
-                                    <span role="status">sabar bego</span>
+                                    <span role="status">sabar woi</span>
                                 </div>
 
 
